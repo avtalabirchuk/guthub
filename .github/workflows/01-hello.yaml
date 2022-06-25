@@ -6,3 +6,12 @@ jobs:
     steps:
       - name: hello-world
         run: echo "Hello World"
+
+name: hello-world-1
+on: push
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    steps:
+      - name: hello-world
+        run: echo "Hello World"
